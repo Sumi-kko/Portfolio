@@ -1,6 +1,5 @@
 ﻿import React from "react";
 import { Col, Row } from "react-bootstrap";
-
 // Tools
 import AWS from "../../Assets/TechIcons/AWS.svg";
 import AzureDevOps from "../../Assets/TechIcons/azure-devops.svg";
