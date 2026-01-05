@@ -1,57 +1,56 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { Container, Row, Col } from "react-bootstrap";
+import Particle from "../Particle";
+import Github from "./Github";
+import Techstack from "./Techstack";
+import Aboutcard from "./AboutCard";
+import laptopImg from "../../Assets/about.png";
+import Toolstack from "./Toolstack";
 
-function AboutCard() {
-    return (
-        <Card className="quote-card-view">
-            <Card.Body>
-                <blockquote className="blockquote mb-0">
-                    <p style={{ textAlign: "justify" }}>
-                        Hi! I’m <span className="purple">Liao Chenyu</span>, a{" "}
-                        <span className="purple">
-                            Business & Financial Technology Year 2 student
-                        </span>{" "}
-                        at <span className="purple">Nanyang Polytechnic</span>.
-                        <br />
-                        <br />
-                        I have a strong interest in{" "}
-                        <span className="purple">AI and Data Analytics</span>, and I’m still
-                        finding where I fit best within the tech space as I continue learning
-                        and building hands-on projects.
-                        <br />
-                        <br />
-                        I’ve worked with{" "}
-                        <b className="purple">
-                            Python, HTML, CSS, ASP.NET, Tableau
-                        </b>{" "}
-                        and enjoy using{" "}
-                        <b className="purple">Canva and AI-assisted design tools</b> to
-                        support UX-focused work and presentations.
-                        <br />
-                        <br />
-                        Outside of school and tech, I enjoy:
-                    </p>
+function About() {
+  return (
+    <>
+      {" "}
+      <Particle />
+      <Container fluid className="about-section">
+        <Container>
+          <Row style={{ justifyContent: "center", padding: "10px" }}>
+            <Col
+              md={7}
+              style={{
+                justifyContent: "center",
+                paddingTop: "30px",
+                paddingBottom: "50px",
+              }}
+            >
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                Know Who <strong className="purple">I Am</strong>
+              </h1>
+              <Aboutcard />
+            </Col>
+                      <Col
+              md={5}
+              style={{ paddingTop: "120px", paddingBottom: "50px" }}
+              className="about-img">
+              <img src={laptopImg} alt="about" className="img-fluid" /> 
+                  </Col>
+          </Row>
+          <h1 className="project-heading">
+            Professional <strong className="purple">Skillset </strong>
+          </h1>
 
-                    <ul>
-                        <li className="about-activity">
-                            <ImPointRight /> Gardening 🌱
-                        </li>
-                        <li className="about-activity">
-                            <ImPointRight /> Gaming 🎮
-                        </li>
-                    </ul>
-                    {/*
-                    <p style={{ color: "rgb(155 126 172)" }}>
-                        “Learning as I go, one project at a time.”
-                    </p>
+          <Techstack />
 
-                    <footer className="blockquote-footer">Chenyu</footer>*/ }
-                </blockquote>
-            </Card.Body>
-        </Card>
-    );
+          <h1 className="project-heading">
+            <strong className="purple">Tools</strong> I use
+          </h1>
+          <Toolstack />
+
+          <Github />
+        </Container>
+      </Container>
+    </>
+  );
 }
 
-export default AboutCard;
-
+export default About;

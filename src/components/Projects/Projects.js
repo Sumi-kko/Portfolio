@@ -26,7 +26,7 @@ function Projects() {
                       <ProjectCard
                           imgPath={budgetly}
                           isBlog={false}
-                          title="Budgetly — Personal Finance Web App"
+                          title="Budgetly - Personal Finance Web App"
                           description="Developed budgeting features to track spending, saving, and category breakdowns. Designed a gamified leaderboard to boost engagement and financial discipline."
                           ghLink="#"  // In Progress
                       />
@@ -37,7 +37,7 @@ function Projects() {
                           imgPath={cpf}
                           isBlog={false}
                           title="Analysis of Financial Independence Barriers for Youths"
-                          description="Analysed CPF contributions’ impact on young adults’ savings and financial independence. Cleaned and visualised CPF data in Tableau dashboards showing trends and risks."
+                          description="Analysed CPF contributions' impact on young adults' savings and financial independence. Cleaned and visualised CPF data in Tableau dashboards showing trends and risks."
                           demoLink="https://public.tableau.com/app/profile/chenyu.liao3079/viz/HowCPFContributionscauseFinancialFragilityAmongSIngaporeanYouths/Story1" // in progress
                       />
                   </Col>
