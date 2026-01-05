@@ -101,7 +101,7 @@ function Certs() {
 
     return (
         <Container fluid className="cert-section">
-            <Particle />
+            <Particle /> {/* <--- MOVE THIS HERE, INSIDE THE RETURN */}
             <Container>
                 <h1 className="project-heading">
                     My <strong className="purple">Certifications</strong>
