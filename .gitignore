@@ -27,3 +27,24 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build outputs
+bin/
+obj/
+
+# Node
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

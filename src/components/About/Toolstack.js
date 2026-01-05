@@ -1,32 +1,86 @@
-import React from "react";
+﻿import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
-import chrome from "../../Assets/TechIcons/Google Chrome.svg";
-import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+
+// Tools
+import AWS from "../../Assets/TechIcons/AWS.svg";
+import AzureDevOps from "../../Assets/TechIcons/azure-devops.svg";
+import Tableau from "../../Assets/TechIcons/tableau.svg";
+import UiPath from "../../Assets/TechIcons/uipath.svg";
+import Git from "../../Assets/TechIcons/Git.svg";
+import Canva from "../../Assets/TechIcons/canva.svg";
+import Figma from "../../Assets/TechIcons/figma.svg";
+import ChatGPT from "../../Assets/TechIcons/chatgpt.svg";
+import VSCode from "../../Assets/TechIcons/vscode.svg";
+import VisualStudio from "../../Assets/TechIcons/visual-studio-icon-2022.svg";
+import PyCharm from "../../Assets/TechIcons/pycharm.svg";
+
+import Chrome from "../../Assets/TechIcons/Google Chrome.svg";
 
 function Toolstack() {
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
-      </Col>
+    return (
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={AWS} alt="AWS" className="tech-icon-images" />
+                <div className="tech-icons-text">AWS</div>
+            </Col>
 
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
-      </Col>
-    </Row>
-  );
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={AzureDevOps} alt="Azure DevOps" className="tech-icon-images " />
+                <div className="tech-icons-text">Azure DevOps</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Tableau} alt="Tableau" className="tech-icon-images" />
+                <div className="tech-icons-text">Tableau</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={UiPath} alt="UiPath" className="tech-icon-images " />
+                <div className="tech-icons-text">UiPath</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Git} alt="Git" className="tech-icon-images" />
+                <div className="tech-icons-text">Git</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Canva} alt="Canva" className="tech-icon-images " />
+                <div className="tech-icons-text">Canva</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Figma} alt="Figma" className="tech-icon-images " />
+                <div className="tech-icons-text">Figma</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={ChatGPT} alt="ChatGPT" className="tech-icon-images " />
+                <div className="tech-icons-text">ChatGPT</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={VSCode} alt="VS Code" className="tech-icon-images" />
+                <div className="tech-icons-text">VS Code</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={VisualStudio} alt="Visual Studio" className="tech-icon-images" />
+                <div className="tech-icons-text">Visual Studio</div>
+            </Col>
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={PyCharm} alt="PyCharm" className="tech-icon-images" />
+                <div className="tech-icons-text">PyCharm</div>
+            </Col>
+
+
+            <Col xs={4} md={2} className="tech-icons">
+                <img src={Chrome} alt="Google Chrome" className="tech-icon-images" />
+                <div className="tech-icons-text">Chrome</div>
+            </Col>
+        </Row>
+    );
 }
 
 export default Toolstack;

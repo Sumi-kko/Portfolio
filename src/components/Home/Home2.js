@@ -12,46 +12,51 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
-              <br />
-              <br />
-              I’m proficient in
-              <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
-                </b>
-              </i>
-              — and I enjoy working across both backend and frontend stacks.
-              <br />
-              <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
-            </p>
+                      <p className="home-about-body">
+                          I’m a Business & Financial Technology student with a strong interest in
+                          <b className="purple"> AI </b>
+                          and
+                          <b className="purple"> data analytics</b>. I enjoy learning how data can be
+                          used to support better decisions and uncover meaningful insights.
+                          <br />
+                          <br />
+                          I have experience working with
+                          <i>
+                              <b className="purple">
+                                  {" "}
+                                  Python, SQL, HTML/CSS/JavaScript,{" "}
+                              </b>
+                          </i>
+                          as well as
+                          <b className="purple"> ASP.NET </b>
+                          and data visualisation tools such as
+                          <b className="purple"> Tableau</b>.
+                          <br />
+                          <br />
+                          I’m particularly interested in building
+                          <i>
+                              <b className="purple">
+                                  {" "}
+                                  data-driven applications, analytical dashboards,{" "}
+                              </b>
+                          </i>
+                          and using AI-assisted tools to make complex information easier to understand.
+                          <br />
+                          <br />
+                          I also care about
+                          <b className="purple"> user experience </b>
+                          and enjoy exploring basic UX and visual design using tools like
+                          <b className="purple"> Canva</b>, along with
+                          <b className="purple"> AI-assisted tools </b>
+                          to improve clarity and usability.
+                      </p>
+
           </Col>
-          <Col md={4} className="myAvtar">
+                  {/*<Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
+            </Tilt
+          </Col>>*/}
         </Row>
       </Container>
     </Container>

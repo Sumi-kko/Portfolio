@@ -160,9 +160,11 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+    height: 3em !important; /* roughly double the previous height */
+    width: auto !important; /* keep aspect ratio correct */
+    max-width: 100px; /* optional, prevent it from being too large */
 }
+
 
 .navbar-nav .nav-link {
   color: white !important;
@@ -595,9 +597,26 @@ button:focus {
   outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
 .tech-icon-images {
-  height: 1.6rem;
-  line-height: 1.6 !important;
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
+
+/* text under the icon */
+.tech-icons-text {
+    font-size: 20px; /* visually matches 33px icon */
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.white-icon {
+    filter: invert(100%) brightness(200%);
+}
+
+
 
 .quote-card-view {
   border: none !important;
@@ -758,4 +777,52 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+/* --------- */
+/* Certifications */
+/* --------- */
+
+.cert-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+}
+
+.cert-card {
+    padding: 40px 25px !important;
+}
+
+.cert-card-view {
+    background-color: transparent !important;
+    color: white !important;
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.45) !important;
+    height: 100% !important;
+    transition: all 0.4s ease !important;
+    text-align: center;
+}
+
+    .cert-card-view:hover {
+        transform: scale(1.03) !important;
+        box-shadow: 0 6px 12px rgba(160, 90, 190, 0.7) !important;
+    }
+
+/* smaller than project images */
+.cert-img {
+    max-height: 110px;
+    object-fit: contain;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.cert-details {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.cert-btn {
+    font-size: 0.85rem !important;
+    padding: 6px 16px !important;
 }

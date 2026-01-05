@@ -3,46 +3,55 @@ import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
-  return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
-            <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
-            <br />
-            <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
-          </p>
+    return (
+        <Card className="quote-card-view">
+            <Card.Body>
+                <blockquote className="blockquote mb-0">
+                    <p style={{ textAlign: "justify" }}>
+                        Hi! I’m <span className="purple">Liao Chenyu</span>, a{" "}
+                        <span className="purple">
+                            Business & Financial Technology Year 2 student
+                        </span>{" "}
+                        at <span className="purple">Nanyang Polytechnic</span>.
+                        <br />
+                        <br />
+                        I have a strong interest in{" "}
+                        <span className="purple">AI and Data Analytics</span>, and I’m still
+                        finding where I fit best within the tech space as I continue learning
+                        and building hands-on projects.
+                        <br />
+                        <br />
+                        I’ve worked with{" "}
+                        <b className="purple">
+                            Python, HTML, CSS, ASP.NET, Tableau
+                        </b>{" "}
+                        and enjoy using{" "}
+                        <b className="purple">Canva and AI-assisted design tools</b> to
+                        support UX-focused work and presentations.
+                        <br />
+                        <br />
+                        Outside of school and tech, I enjoy:
+                    </p>
 
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
-            </li>
-          </ul>
+                    <ul>
+                        <li className="about-activity">
+                            <ImPointRight /> Gardening 🌱
+                        </li>
+                        <li className="about-activity">
+                            <ImPointRight /> Gaming 🎮
+                        </li>
+                    </ul>
+                    {/*
+                    <p style={{ color: "rgb(155 126 172)" }}>
+                        “Learning as I go, one project at a time.”
+                    </p>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
-  );
+                    <footer className="blockquote-footer">Chenyu</footer>*/ }
+                </blockquote>
+            </Card.Body>
+        </Card>
+    );
 }
 
 export default AboutCard;
+
