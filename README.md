@@ -4,7 +4,7 @@
 </h2>
 
 <div align="center">
-  <img alt="Portfolio Demo" src="./Images/readme-img1.png" />
+  <!-- Removed original demo image -->
 </div>
 
 <br/>
@@ -22,22 +22,17 @@
 ## 📌 Overview
 
 This is my **personal portfolio website**, built using React and modern web technologies.  
-It showcases my projects, skills, and resume in a clean, responsive layout.
+It showcases my projects, skills, certifications, and resume in a clean, responsive layout.
 
 > ⚠️ **Credit Notice**  
-> This project is **adapted from the open-source portfolio template by  
-> [Soumyajit4419](https://github.com/soumyajit4419)**.  
->  
-> Original repository:  
-> 👉 https://github.com/soumyajit4419/Portfolio  
->  
-> I’ve customized the content, styling, and structure to fit my own profile and needs.
+> This project is **adapted from an open-source portfolio template**.  
+> I have **customized content, styling, structure, and images** to reflect my own profile.
 
 ---
 
 ## 🛠 Built With
 
-This portfolio is developed using the following technologies:
+This portfolio is developed using:
 
 - React.js
 - Node.js
@@ -53,7 +48,8 @@ This portfolio is developed using the following technologies:
 - 📖 **Multi-page layout**
 - 🎨 **Styled with React-Bootstrap and custom CSS**
 - 📱 **Fully responsive across devices**
-- ⚡ **Easy to customize for personal use**
+- ⚡ **Showcases projects, certifications, and skills**
+- 🔧 **Easy to maintain and update**
 
 ---
 
@@ -64,4 +60,15 @@ To run this project locally, make sure you have **Node.js** and **Git** installe
 ### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Sumi-kko/Portfolio.git
+
+# Go into the project folder
+cd Portfolio
+
+# Install dependencies
 npm install
+
+# Start the development server
+npm start
+
