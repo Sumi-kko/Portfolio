@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -8,6 +8,7 @@ import cpf from "../../Assets/Projects/cpf.png"
 import employee from "../../Assets/Projects/employee.png"
 import ntuc from "../../Assets/Projects/ntuc.png"
 import budgetly from "../../Assets/Projects/budgetly.png"
+import ocr from "../../Assets/Projects/ocrbot.png"
 
 function Projects() {
   return (
@@ -29,6 +30,15 @@ function Projects() {
                           title="Budgetly - Personal Finance Web App"
                           description="Developed budgeting features to track spending, saving, and category breakdowns. Designed a gamified leaderboard to boost engagement and financial discipline."
                           ghLink="#"  // In Progress
+                      />
+                  </Col>
+                  <Col md={4} className="project-card">
+                      <ProjectCard
+                          imgPath={ocr} // replace with your OCR bot image or screenshot
+                          isBlog={false}
+                          title="UiPath Invoice Automation Bot (OCR → Excel)"
+                          description="Built an automation bot using UiPath to extract invoice details such as vendor name, invoice number, date, and total amount from PDF files using OCR. Processed and validated extracted data before exporting structured results into Excel, reducing manual data entry and improving workflow efficiency."
+                          ghLink="https://github.com/Sumi-kko/UIPath_OCR_Bot/" // or '#' if private
                       />
                   </Col>
 
