@@ -26,38 +26,39 @@ function Projects() {
                   <Col md={4} className="project-card">
                       <ProjectCard
                           imgPath={budgetly}
-                          isBlog={false}
                           title="Budgetly - Personal Finance Web App"
-                          description="Developed budgeting features to track spending, saving, and category breakdowns. Designed a gamified leaderboard to boost engagement and financial discipline."
-                          ghLink="#"  // In Progress
+                          description="Developed the budgeting page to manage envelopes, track spending, and monitor saving goals. Designed a gamified leaderboard to increase engagement. Collaborated with the team to deliver an intuitive, user-friendly interface with interactive dashboards."
+                          skills={["ASP.NET"]}
+                          ghLink="#"
                       />
                   </Col>
+
                   <Col md={4} className="project-card">
                       <ProjectCard
-                          imgPath={ocr} // replace with your OCR bot image or screenshot
-                          isBlog={false}
+                          imgPath={ocr}
                           title="UiPath Invoice Automation Bot (OCR → Excel)"
-                          description="Built an automation bot using UiPath to extract invoice details such as vendor name, invoice number, date, and total amount from PDF files using OCR. Processed and validated extracted data before exporting structured results into Excel, reducing manual data entry and improving workflow efficiency."
-                          ghLink="https://github.com/Sumi-kko/UIPath_OCR_Bot/" // or '#' if private
+                          description="Developed a UiPath automation bot to extract invoice data (vendor, invoice number, date, totals) from PDFs using OCR. Processed and exported structured Excel reports, reducing manual data entry and improving workflow efficiency."
+                          skills={["UiPath"]}
+                          ghLink="https://github.com/Sumi-kko/UIPath_OCR_Bot/"
                       />
                   </Col>
 
                   <Col md={4} className="project-card">
                       <ProjectCard
                           imgPath={cpf}
-                          isBlog={false}
                           title="Analysis of Financial Independence Barriers for Youths"
-                          description="Analysed CPF contributions' impact on young adults' savings and financial independence. Cleaned and visualised CPF data in Tableau dashboards showing trends and risks."
-                          demoLink="https://public.tableau.com/app/profile/chenyu.liao3079/viz/HowCPFContributionscauseFinancialFragilityAmongSIngaporeanYouths/Story1" // in progress
+                          description="Led the CPF sector analysis and integrated the entire Tableau dashboard for the team. Analysed CPF data to identify trends and risks impacting young adults' financial independence, producing actionable insights."
+                          skills={["Tableau", "Data Analysis", "Excel"]}
+                          demoLink="https://public.tableau.com/app/profile/chenyu.liao3079/viz/HowCPFContributionscauseFinancialFragilityAmongSIngaporeanYouths/Story1"
                       />
                   </Col>
 
                   <Col md={4} className="project-card">
                       <ProjectCard
                           imgPath={employee}
-                          isBlog={false}
-                          title="DSA Employee Management"
-                          description="Built a Python system to store, validate, and organise employee records efficiently. Applied data structures to improve sorting and retrieval, reducing manual tracking."
+                          title="DSA Employee Management System"
+                          description="Built a Python system to store, validate, and organise employee training records. Applied data structures to improve sorting and retrieval efficiency, reducing manual tracking."
+                          skills={["Python"]}
                           ghLink="https://github.com/Sumi-kko/EmployeeManagementSystem"
                       />
                   </Col>
@@ -65,12 +66,14 @@ function Projects() {
                   <Col md={4} className="project-card">
                       <ProjectCard
                           imgPath={ntuc}
-                          isBlog={false}
-                          title="NTUC App Development"
-                          description="Developed the NTUC website with cover page, navigation, footer, and chatbot integration. Managed CSS styling and overall design as team leader."
+                          title="NTUC Website Development"
+                          description="Led the development of the NTUC website, including homepage, navigation, footer, and chatbot integration. Designed prototypes, implemented CSS styling, and ensured a polished, user-friendly final site."
+                          skills={["HTML", "CSS", "JavaScript", "Bootstrap", "UI/UX Design"]}
                           ghLink="https://github.com/Sumi-kko/NTUC_website"
                       />
                   </Col>
+
+
        </Row>
       </Container>
     </Container>

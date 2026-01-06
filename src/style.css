@@ -500,14 +500,13 @@ footer {
 }
 
 /* ==========================================================================
-   8. PROJECTS SECTION (Padding & Glass Cards)
+   8. PROJECTS SECTION (Alignment Fix: Skills Baseline)
    ========================================================================== */
 .project-section {
     position: relative !important;
-    padding-top: 180px !important; /* FIXED: Increased to clear Navbar */
+    padding-top: 180px !important;
     padding-bottom: 50px !important;
     background-color: transparent !important;
-    background-image: none !important;
     z-index: 1 !important;
 }
 
@@ -518,7 +517,6 @@ footer {
     padding-top: 10px !important;
 }
 
-    /* Re-applying Blue to strong tags in headings */
     .project-heading strong {
         color: #8dc0f0 !important;
     }
@@ -529,7 +527,6 @@ footer {
 }
 
 .project-card-view {
-    /* Glassmorphism Logic */
     background-color: rgba(255, 255, 255, 0.05) !important;
     color: white !important;
     border: 1px solid rgba(141, 192, 240, 0.1) !important;
@@ -537,39 +534,79 @@ footer {
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
     height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
     .project-card-view:hover {
         transform: scale(1.02) !important;
         overflow: hidden !important;
-        /* Glow effect using Theme Blue */
         box-shadow: 0 4px 15px rgba(141, 192, 240, 0.5) !important;
         border: 1px solid #8dc0f0 !important;
     }
 
-.card-img-top {
-    padding: 20px !important;
-    opacity: 0.8 !important;
-    border-radius: 10px !important;
+.card-body-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    padding: 15px !important;
 }
 
-/* Buttons Logic */
+.card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+}
+
+.project-card-text {
+    flex-grow: 1 !important; /* Pushes the skills container to the bottom */
+    margin-bottom: 15px !important;
+    text-align: justify !important;
+}
+
+/* THE FIX: Fixed height for skills container */
+.project-card-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    /* Reserved space for 2 rows of badges */
+    min-height: 70px !important;
+    align-content: flex-start !important; /* Keeps single badges at the top of this box */
+
+    margin-top: auto !important;
+    padding-bottom: 10px !important;
+}
+
+.skill-badge {
+    background-color: #060e1c;
+    color: #fff;
+    border: 1px solid #8dc0f0;
+    font-size: 0.9rem !important;
+    padding: 3px 10px !important;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.card-img-top {
+    padding: 15px !important;
+    opacity: 0.8 !important;
+    border-radius: 10px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+}
+
+.card-buttons {
+    margin-top: auto !important;
+    padding-top: 5px !important;
+    text-align: center;
+}
+
 .btn-primary {
     color: #fff !important;
     background-color: #060e1c !important;
     border-color: #8dc0f0 !important;
-}
-
-    .btn-primary:hover {
-        color: #fff !important;
-        background-color: #0a1629 !important;
-        border-color: #8dc0f0 !important;
-        box-shadow: 0 0 10px #8dc0f0 !important;
-    }
-
-.btn:focus {
-    outline: none !important;
-    box-shadow: none !important;
+    padding: 6px 12px !important;
 }
 /* ==========================================================================
    9. RESUME SECTION (Timeline & List Logic)
