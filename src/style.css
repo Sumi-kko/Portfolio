@@ -702,15 +702,34 @@ footer {
     z-index: 1 !important;
 }
 
+.cert-img {
+    height: 150px !important; /* Fixed height to keep cards uniform */
+    width: auto !important; /* Prevents the image from stretching horizontally */
+    margin: 0 auto !important; /* Centers the image */
+    object-fit: contain !important; /* Ensures the whole logo fits inside the area */
+    padding: 20px !important;
+    opacity: 0.9;
+}
+
+/* Also ensures the Card Body uses flex to align the buttons at the bottom */
 .cert-card-view {
     background-color: rgba(255, 255, 255, 0.05) !important;
     color: white !important;
     border: 1px solid rgba(141, 192, 240, 0.1) !important;
     box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.3) !important;
     height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
     transition: all 0.4s ease !important;
     text-align: center;
 }
+
+    .cert-card-view .card-body {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        flex-grow: 1 !important;
+    }
 
     .cert-card-view:hover {
         transform: scale(1.03) !important;
@@ -722,12 +741,7 @@ footer {
     padding: 40px 25px !important;
 }
 
-.cert-img {
-    max-height: 110px;
-    object-fit: contain;
-    padding: 20px;
-    opacity: 0.9;
-}
+
 
 .cert-details {
     font-size: 0.9rem;
