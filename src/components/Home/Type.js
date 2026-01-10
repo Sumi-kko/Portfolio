@@ -8,7 +8,7 @@ function Type() {
                 strings: [
                     "Business & Financial Technology Student",
                     "Ladies in Tech - Publicity Sub-Committee",
-                    "Cloud Computing - Head of Publicity",
+                    "Cloud Computing - Publicity Sub-Committee",
                 ],
                 autoStart: true,
                 loop: true,
