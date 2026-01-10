@@ -18,10 +18,7 @@ import Chrome from "../../Assets/TechIcons/Google Chrome.svg";
 function Toolstack() {
     return (
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-            <Col xs={4} md={2} className="tech-icons">
-                <img src={AWS} alt="AWS" className="tech-icon-images" />
-                <div className="tech-icons-text">AWS</div>
-            </Col>
+            
 
             <Col xs={4} md={2} className="tech-icons">
                 <img src={AzureDevOps} alt="Azure DevOps" className="tech-icon-images " />
