@@ -6,10 +6,66 @@ html {
     --imp-text-color: #8dc0f0;
 }
 
+
+
+/* Section 11: Global Overlay Mask */
+.App {
+    background-color: rgba(10, 22, 41, 0.3) !important; /* 0.3 is the 'thickness' of the mask */
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Sits above particles but below text */
+}
+
+/* Ensure the particles stay at the very bottom */
+#tsparticles {
+    z-index: -2 !important; /* Pushed further back */
+    background-color: transparent !important;
+}
+
+/* Ensure the body image stays behind everything */
 body {
-    background-color: #0a1629 !important;
-    color: white !important;
+    z-index: -3;
+}
+
+.home-about-section, .about-section, .project-section, .resume-section, .cert-section {
+    /* This adds a very subtle blur to the background behind the text */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    /* REPLACE the existing body block with this */
     margin: 0;
+    background-image: url("./Assets/background.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    color: white !important;
+}
+
+#tsparticles {
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important; /* Stays behind text but in front of body image */
+    top: 0;
+    left: 0;
+    /* REMOVE the background-color here so the image shows through */
+    background-color: transparent !important;
 }
 
 .purple, .main-name, strong, .Typewriter__wrapper, .icon-colour {
@@ -30,8 +86,8 @@ button:focus {
     width: 100%;
     height: 100%;
     z-index: 999999;
-    background-color: #060e1c;
-    background-image: url(./Assets/pre.svg);
+    background-color: #060e1c !important; /* Plain dark blue */
+    background-image: url(./Assets/pre.svg); /* Keep your loading icon */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -153,7 +209,7 @@ button:focus {
 }
 
 .logo {
-    height: 4em !important;
+    height: 2.5em !important;
     width: auto !important;
     max-width: 100px;
 }
@@ -207,30 +263,30 @@ button:focus {
 /* ==========================================================================
    4. HOME SECTION (Main Hero)
    ========================================================================== */
-#tsparticles {
-    position: fixed !important;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: -1 !important;
-    top: 0;
-    left: 0;
-    background-color: #0a1629 !important;
-}
-.home-section, .about-section, .project-section,
-.resume-section, .cert-section {
-    background-color: transparent !important;
-    background-image: none !important;
+
+/* Home About Section - kept semi-transparent so text is readable */
+/* Update this block (Section 5) */
+.home-about-section {
     position: relative !important;
     z-index: 1 !important;
+    padding: 70px 0 !important;
+    /* Changed from linear-gradient to transparent */
+    background: transparent !important;
 }
+
+/* Update this block (Section 4) */
 .home-section {
     position: relative !important;
     z-index: 1 !important;
     background-color: transparent !important;
     background-image: none !important;
-   
     padding-top: 30px !important;
-    min-height: 100vh !important; /* Ensures section takes full height */
+    min-height: 100vh !important;
+}
+/* Ensure all other sections are fully transparent */
+.about-section, .project-section,
+.resume-section, .cert-section {
+    background-color: transparent !important;
 }
 
 .home-header {
@@ -271,13 +327,7 @@ button:focus {
 /* ==========================================================================
    5. HOME2 (About Me / Introduction)
    ========================================================================== */
-.home-about-section {
-    position: relative !important;
-    z-index: 1 !important;
-    padding: 70px 0 !important;
-    /* Changed to semi-transparent gradient so particles show behind it */
-    background: linear-gradient(180deg, rgba(10, 22, 41, 0.7) 0%, rgba(22, 38, 61, 0.5) 100%) !important;
-}
+
 .myAvtar {
     justify-content: center !important;
     padding-top: 15em !important;
@@ -780,11 +830,7 @@ footer {
     background-color: transparent !important;
 }
 
-/* Particles absolute bottom layer */
-#tsparticles {
-    z-index: -1 !important;
-    background-color: #0a1629 !important;
-}
+
 
 /* Final Footer Safety */
 .footer {

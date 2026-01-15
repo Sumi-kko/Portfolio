@@ -8,41 +8,40 @@ function Particle() {
             params={{
                 particles: {
                     number: {
-                        value: 40, // Much lower count to keep it professional
+                        value: 40,
                         density: {
                             enable: true,
                             value_area: 1200,
                         },
                     },
                     color: {
-                        value: "#ffffff", // Base color is white
+                        // Array of colors for a white and blue mix
+                        value: ["#ffffff", "#00bfff", "#add8e6"],
                     },
                     shape: {
                         type: "circle",
                     },
                     opacity: {
-                        value: 0.2, // Very faint centers
+                        value: 0.4, // Increased slightly for better visibility
                         random: true,
                     },
                     size: {
                         value: 7,
-                        random: { enable: true, minimumValue: 1 }, // High variety, mostly small
+                        random: { enable: true, minimumValue: 1 },
                     },
-                    // This "Stroke" creates the multi-color rim effect
                     stroke: {
                         width: 1,
                         color: "#ffffff",
-                        opacity: 0.4,
+                        opacity: 0.3,
                     },
-                    // Shadow adds the "Oil Slick" shimmer without being saturated
                     shadow: {
                         enable: true,
-                        color: "#7fffd4", // Aquamarine glint
-                        blur: 10,
+                        color: "#00bfff", // Soft blue glow
+                        blur: 8,
                     },
                     move: {
                         enable: true,
-                        speed: 0.4, // Very slow, graceful floating
+                        speed: 0.4,
                         direction: "top",
                         random: true,
                         straight: false,
@@ -57,7 +56,7 @@ function Particle() {
                         },
                         onclick: {
                             enable: true,
-                            mode: "push", // This adds new bubbles on click
+                            mode: "push",
                         },
                     },
                     modes: {
@@ -65,14 +64,15 @@ function Particle() {
                             distance: 150,
                             size: 10,
                             duration: 2,
-                            opacity: 0.6,
+                            opacity: 0.7,
+                            // Ensure bubbles turn a bright blue/white on hover
+                            color: "#ffffff",
                         },
                         push: {
-                            quantity: 6, // This is how many new bubbles appear per click
+                            quantity: 4,
                         },
                     },
                 },
-                
                 retina_detect: true,
             }}
         />

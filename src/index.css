@@ -3,9 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit&family=PT+Mono&display=swap");
 
 body {
-  margin: 0;
-  font-family: "PT Mono", monospace !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+    margin: 0;
+    font-family: "PT Mono", monospace !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Path points from index.css to your Assets folder */
+    background-image: url('./Assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #0a1629; /* Keeps the dark blue if the image fails to load */
 }

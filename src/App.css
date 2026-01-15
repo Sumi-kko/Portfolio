@@ -15,7 +15,7 @@
 
 .App-header {
     /* Updated to your deep blue with a dark gradient */
-    background: linear-gradient(180deg, #0a1629 0%, #0d1b33 100%) !important;
+    background: transparent !important;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
