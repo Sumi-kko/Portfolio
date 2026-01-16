@@ -8,47 +8,56 @@ function Particle() {
             params={{
                 particles: {
                     number: {
-                        value: 40,
+                        value: 55, // Slightly more to account for variety
                         density: {
                             enable: true,
-                            value_area: 1200,
+                            value_area: 1000,
                         },
                     },
                     color: {
-                        // Array of colors for a white and blue mix
-                        value: ["#ffffff", "#00bfff", "#add8e6"],
+                        value: ["#00bfff", "#8dc0f0", "#ffffff"],
                     },
                     shape: {
                         type: "circle",
                     },
                     opacity: {
-                        value: 0.4, // Increased slightly for better visibility
+                        value: 0.5,
                         random: true,
+                        anim: {
+                            enable: true,
+                            speed: 0.4,
+                            opacity_min: 0,
+                            sync: false,
+                        },
                     },
                     size: {
-                        value: 7,
-                        random: { enable: true, minimumValue: 1 },
+                        value: 6, // Increased by 1px from your previous 5
+                        random: {
+                            enable: true,
+                            minimumValue: 1.5 // Better variety range
+                        },
                     },
                     stroke: {
                         width: 1,
-                        color: "#ffffff",
+                        color: "#8dc0f0",
                         opacity: 0.3,
                     },
                     shadow: {
                         enable: true,
-                        color: "#00bfff", // Soft blue glow
-                        blur: 8,
+                        color: "#00bfff",
+                        blur: 5,
                     },
                     move: {
                         enable: true,
-                        speed: 0.4,
+                        speed: 0.5,
                         direction: "top",
-                        random: true,
+                        random: true, // Movement variety
                         straight: false,
                         out_mode: "out",
                     },
                 },
                 interactivity: {
+                    detect_on: "window",
                     events: {
                         onhover: {
                             enable: true,
@@ -61,15 +70,17 @@ function Particle() {
                     },
                     modes: {
                         bubble: {
-                            distance: 150,
+                            distance: 180,
                             size: 10,
                             duration: 2,
-                            opacity: 0.7,
-                            // Ensure bubbles turn a bright blue/white on hover
+                            opacity: 0.8,
                             color: "#ffffff",
                         },
                         push: {
-                            quantity: 4,
+                            // High variety on tap: 
+                            // It will add a cluster, but the random logic above 
+                            // ensures they are all different sizes/speeds
+                            quantity: 7,
                         },
                     },
                 },

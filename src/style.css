@@ -1,73 +1,69 @@
+
 /* ==========================================================================
-   GLOBAL THEME & VARIABLES
+   GLOBAL THEME & BACKGROUND SYSTEM
    ========================================================================== */
 html {
-    --section-background-color: linear-gradient(to bottom left, #0a1629, #16263d);
     --imp-text-color: #8dc0f0;
 }
 
-
-
-/* Section 11: Global Overlay Mask */
-.App {
-    background-color: rgba(10, 22, 41, 0.3) !important; /* 0.3 is the 'thickness' of the mask */
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: 1; /* Sits above particles but below text */
-}
-
-/* Ensure the particles stay at the very bottom */
-#tsparticles {
-    z-index: -2 !important; /* Pushed further back */
-    background-color: transparent !important;
-}
-
-/* Ensure the body image stays behind everything */
 body {
-    z-index: -3;
-}
-
-.home-about-section, .about-section, .project-section, .resume-section, .cert-section {
-    /* This adds a very subtle blur to the background behind the text */
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    /* REPLACE the existing body block with this */
     margin: 0;
+    padding: 0;
+    color: white !important;
+    /* Layer -3: The Base Image */
     background-image: url("./Assets/background.png") !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
-    color: white !important;
 }
 
 #tsparticles {
     position: fixed !important;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: -1 !important; /* Stays behind text but in front of body image */
     top: 0;
     left: 0;
-    /* REMOVE the background-color here so the image shows through */
-    background-color: transparent !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important;
+    filter: blur(5px);
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    background-color: rgba(6, 11, 20, 0.5) !important;
+    /* Allows the particle engine to see the mouse */
+    pointer-events: auto !important;
 }
 
+.App {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    width: 100%;
+    background: transparent !important;
+    /* Clicks pass through the empty space of the App container */
+    pointer-events: none !important;
+}
+
+/* ONLY re-enable pointers for content that needs to be clickable */
+/* This prevents large empty section divs from blocking the background */
+.navbar,
+.footer,
+.project-card-view,
+.cert-card-view,
+.resume-item,
+button,
+a,
+.social-icons {
+    pointer-events: auto !important;
+}
+
+/* Cleanup for all sections to ensure no "solid blocks" cover the particles */
+.home-section, .home-about-section, .about-section,
+.project-section, .resume-section, .cert-section {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Text Highlights */
 .purple, .main-name, strong, .Typewriter__wrapper, .icon-colour {
     color: var(--imp-text-color) !important;
 }
@@ -335,7 +331,6 @@ button:focus {
 
 .home-about-description {
     color: white !important;
-   
     padding-bottom: 20px !important;
     text-align: center;
 }

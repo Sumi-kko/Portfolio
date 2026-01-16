@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
+import Preloader from "./components/Pre"; // Fixed path
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -7,8 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Certs from "./components/Certifications/Certs";
-// 1. IMPORT YOUR BACKGROUND IMAGE HERE
-import backgroundImage from "./Assets/background.png";
 
 import {
     BrowserRouter as Router,
@@ -22,18 +20,11 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-    const [load, upadateLoad] = useState(true);
+    const [load, updateLoad] = useState(true);
 
     useEffect(() => {
-        // 2. FORCE THE BACKGROUND IMAGE ONTO THE BODY
-        document.body.style.backgroundImage = `url(${backgroundImage})`;
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center";
-        document.body.style.backgroundAttachment = "fixed";
-        document.body.style.backgroundRepeat = "no-repeat";
-
         const timer = setTimeout(() => {
-            upadateLoad(false);
+            updateLoad(false);
         }, 1200);
 
         return () => clearTimeout(timer);
