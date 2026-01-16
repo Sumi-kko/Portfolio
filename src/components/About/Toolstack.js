@@ -35,7 +35,7 @@ function Toolstack() {
 
             <Col xs={4} md={2} className="tech-icons">
                 <img src={Git} alt="Git" className="tech-icon-images" />
-                <div className="tech-icons-text">Git</div>
+                <div className="tech-icons-text">GitHub</div>
             </Col>
 
             <Col xs={4} md={2} className="tech-icons">
@@ -60,7 +60,7 @@ function Toolstack() {
 
             <Col xs={4} md={2} className="tech-icons">
                 <img src={VisualStudio} alt="Visual Studio" className="tech-icon-images" />
-                <div className="tech-icons-text">Visual Studio</div>
+                <div className="tech-icons-text">Visual Studio 2022</div>
             </Col>
 
             <Col xs={4} md={2} className="tech-icons">
