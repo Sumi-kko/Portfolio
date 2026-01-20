@@ -1,9 +1,9 @@
-
+﻿
 /* ==========================================================================
    GLOBAL THEME & BACKGROUND SYSTEM
    ========================================================================== */
 html {
-    --imp-text-color: #8dc0f0;
+    --imp-text-color: #6692ba;
 }
 
 body {
@@ -110,7 +110,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #8dc0f0;
+    background: #6692ba;
     border-radius: 12px;
 }
 
@@ -146,7 +146,7 @@ button:focus {
 
     .navbar-toggler span {
         display: block !important;
-        background-color: #8dc0f0 !important; /* Changed to Blue */
+        background-color: #6692ba !important; /* Changed to Blue */
         height: 4px !important;
         width: 27px !important;
         margin-top: 5px !important;
@@ -246,7 +246,7 @@ button:focus {
             height: 5px;
             width: 0;
             border-radius: 16px;
-            background: #8dc0f0; /* Changed to Theme Blue */
+            background: #6692ba; /* Changed to Theme Blue */
             bottom: 1px;
             left: 0;
             z-index: -1;
@@ -306,18 +306,18 @@ button:focus {
 }
 
 .main-name {
-    color: #8dc0f0 !important;
+    color: #6692ba !important;
 }
 
 .Typewriter__wrapper {
     font-size: 2.2em !important;
-    color: #8dc0f0 !important;
+    color: #6692ba !important;
     font-weight: 600 !important;
 }
 
 .Typewriter__cursor {
     font-size: 2.4em !important;
-    color: #8dc0f0 !important;
+    color: #6692ba !important;
 }
 
 /* ==========================================================================
@@ -495,7 +495,7 @@ footer {
 
     .tech-icons:hover {
         transform: scale(1.05) !important;
-        outline: 2.2px solid #8dc0f0 !important; /* Theme Blue */
+        outline: 2.2px solid #6692ba !important; /* Theme Blue */
         box-shadow: 0px 0px 15px rgba(141, 192, 240, 0.3) !important;
     }
 
@@ -563,7 +563,7 @@ footer {
 }
 
     .project-heading strong {
-        color: #8dc0f0 !important;
+        color: #6692ba !important;
     }
 
 .project-card {
@@ -587,7 +587,7 @@ footer {
         transform: scale(1.02) !important;
         overflow: hidden !important;
         box-shadow: 0 4px 15px rgba(141, 192, 240, 0.5) !important;
-        border: 1px solid #8dc0f0 !important;
+        border: 1px solid #6692ba !important;
     }
 
 .card-body-flex {
@@ -626,7 +626,7 @@ footer {
 .skill-badge {
     background-color: #060e1c;
     color: #fff;
-    border: 1px solid #8dc0f0;
+    border: 1px solid #6692ba;
     font-size: 0.9rem !important;
     padding: 3px 10px !important;
     border-radius: 12px;
@@ -650,7 +650,7 @@ footer {
 .btn-primary {
     color: #fff !important;
     background-color: #060e1c !important;
-    border-color: #8dc0f0 !important;
+    border-color: #6692ba !important;
     padding: 6px 12px !important;
 }
 /* ==========================================================================
@@ -705,7 +705,7 @@ footer {
         line-height: 18px;
         font-size: 0.9em;
         background: #0a1629 !important;
-        color: #8dc0f0 !important;
+        color: #6692ba !important;
         padding: 8px 15px;
         display: inline-block;
         font-weight: 600;
@@ -779,7 +779,7 @@ footer {
     .cert-card-view:hover {
         transform: scale(1.03) !important;
         box-shadow: 0 6px 12px rgba(141, 192, 240, 0.3) !important;
-        border: 1px solid #8dc0f0 !important;
+        border: 1px solid #6692ba !important;
     }
 
 .cert-card {
